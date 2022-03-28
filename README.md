@@ -13,10 +13,19 @@ System Log 분석을 위해 Filebeat 를 연동해 Syslog 분석기능도 추가
 - 수집된 데이터를 HDFS 에 저장후 Hive 를 통해 조회
 
 이룰 구현하기 위한 환경설정은 다음과 같습니다.
+- Ubuntu 18.04 VM with 8 vcpu, 16gb memory, 500gb disk 3대
 - multi-node Kafka Cluster
 - multi-node Hadoop Cluter
 - Spark with multi-node Hadoop Yarn
 - Hive
 - Metricbeat
 
----
+
+--- 
+### VM 생성 및 네트워크 설정
+먼저 VM 을 생성하고 VM 들끼리 서로 통신할수 있게 서버 정보와 key를 공유합니다.
+관련 정보:
+
+
+
+
