@@ -19,4 +19,4 @@ System Log 분석을 위해 Filebeat 를 연동해 Syslog 분석기능도 추가
 - Hive
 - Metricbeat
 
-
+---
