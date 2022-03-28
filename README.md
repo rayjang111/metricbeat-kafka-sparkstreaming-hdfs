@@ -16,16 +16,48 @@ System Log 분석을 위해 Filebeat 를 연동해 Syslog 분석기능도 추가
 - Ubuntu 18.04 VM with 8 vcpu, 16gb memory, 500gb disk 3대
 - multi-node Kafka Cluster
 - multi-node Hadoop Cluter
-- Spark with multi-node Hadoop Yarn
+- multi-node Spark with Hadoop Yarn
 - Hive
 - Metricbeat
 
 
 --- 
-### VM 생성 및 네트워크 설정
+### 1.VM 생성 및 네트워크 설정
+
 먼저 VM 을 생성하고 VM 들끼리 서로 통신할수 있게 서버 정보와 key를 공유합니다.
-관련 정보:
+
+관련 링크:
+https://rayjang111.notion.site/key-password-a0d901ff12eb4a6497a4004170819846
+
+### 2. Kafka 설치
+
+Kafka 와 Zookeeper을 설치해주고 구성해준다
+
+myid 설정이 핵심
+
+관련 링크:
+https://rayjang111.notion.site/Ubuntu-18-04-Kafka-Cluster-7996e32dfbef4c7fb712e7cfa4eac3d4
+
+### 3.하둡 클러스터 구성
+
+하둡 클러스터 구성을 통해서 hdfs, yarn 을 준비해준다
+
+관련링크:
+https://rayjang111.notion.site/Ubuntu-18-04-10-22db1220cbc54315984d6bb4094d0a3d
+
+### 4.Spark 클러스터 구성
+
+Spark를 클러스터 구성하고 Yarn 을 Resource Manager 로서 관리할 수 있게 해줌
+
+관련링크:
+https://rayjang111.notion.site/Ubuntu-18-04-Spark-Cluster-535aa2d98f0c4c9c96b2114f3b20c3f0
 
 
+### 5.Metric Beat 설치 및 실행
+
+Metricbeat 를 각 서버마다 설치해주고 Output을 Kafka 로 설정
+
+관련링크: 
+https://rayjang111.notion.site/2-241593e946dd4e29954eb3b9597e7291
 
 
