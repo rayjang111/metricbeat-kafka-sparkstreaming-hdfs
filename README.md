@@ -1,7 +1,9 @@
 # KAFKA 와 Spark Streaming 을 활용한 빅데이터 환경 파이프라인 구축 프로젝트
 
 이 프로젝트는 Kafka 와 Spark Streaming 을 중심으로 Hadoop, MetricBeats를 설치부터 시작해 스크래치 부터 시작할 수 있도록 하는 토이 프로젝트입니다.
+
 Kafka 의 프로듀서 데이터로선 서버의 데이터를 분석하기 위해서 Metricbeat 의 System module을 사용할 계획이고 차후
+
 System Log 분석을 위해 Filebeat 를 연동해 Syslog 분석기능도 추가할 예정입니다.
 
 이 프로젝트의 최종적인 데이터처리 프로세스는
